@@ -113,8 +113,8 @@ Each metric is scored on a scale from 0–5 to ensure measurable performance.
 ### **1️⃣ Clone the Repository**
 
 ```bash
-git clone https://github.com/your-repo/rag-pdf-bot.git
-cd rag-pdf-bot
+git clone https://github.com/your-repo/rag-bot.git
+cd rag-bot
 cd ragbot-api
 ```
 
