@@ -1,5 +1,5 @@
 ## 📌 Overview  
-The **RAG-PDF-CHATBOT** enables users to upload PDF documents and ask questions, receiving intelligent responses based on document content. It uses **Retrieval-Augmented Generation (RAG)** with **LLMs, embeddings, and a vector database** to enable **context-aware and verifiable** Q&A.
+The **RAG-BOT** enables users to upload PDF documents and ask questions, receiving intelligent responses based on document content. It uses **Retrieval-Augmented Generation (RAG)** with **LLMs, embeddings, and a vector database** to enable **context-aware and verifiable** Q&A.
 
 ### 🔹 Key Technologies:
 - **LLM & Embeddings**: OpenAI APIs (`gpt-4`, `text-embedding-ada-002`)
