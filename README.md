@@ -140,16 +140,3 @@ npm run dev
 
 ---
 
-## 📷 Demo Preview
-
-Example screenshots show:
-- Home screen:
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/17f48bc1-619e-46b7-9c06-8f48ba05b28f" />
-- Uploaded document:
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/a809f55f-e9ef-4db0-a3cd-5bd4bbd39c6c" />
-- Question & AI-generated answer with citation:
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/559e278a-ef60-4a53-ba93-953c8e04b75f" />
-- Ability to click/trace source:
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/82c9ec8c-16cc-4bb1-9706-8c1e47aeb9b0" />
-- Asking question out of context:
-<img width="1469" alt="image" src="https://github.com/user-attachments/assets/5755ae36-d41b-4199-8b27-1c6cdaaf049a" />
