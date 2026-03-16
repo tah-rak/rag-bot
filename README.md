@@ -2,7 +2,7 @@
 The **RAG-BOT** enables users to upload PDF documents and ask questions, receiving intelligent responses based on document content. It uses **Retrieval-Augmented Generation (RAG)** with **LLMs, embeddings, and a vector database** to enable **context-aware and verifiable** Q&A.
 
 ### 🔹 Key Technologies:
-- **LLM & Embeddings**: OpenAI APIs (`gpt-4`, `text-embedding-ada-002`)
+- **LLM & Embeddings**: Gemini APIs  (Gemini 1.5 / Gemini 1.0 models)
 - **Vector Storage**: Pinecone
 - **Backend**: FastAPI (Python)
 - **Frontend**: React
@@ -37,16 +37,16 @@ This chatbot is designed not just for accurate answers, but **trustworthy ones**
    - Cleans and normalizes document data
 
 4. **Embedding Model**  
-   Converts chunks into **vector embeddings** via OpenAI and stores them in Pinecone.
+   Converts chunks into **vector embeddings** via Gemini and stores them in Pinecone.
 
 5. **Vector Database (Pinecone)**  
    Enables **semantic search** over embedded chunks for fast, relevant retrieval.
 
 6. **Retrieval + Context Builder**  
-   Matches queries to document vectors, builds **context window** for GPT-4.
+   Matches queries to document vectors, builds **context window** for  Gemini.
 
 7. **LLM Response Generation**  
-   GPT-4 generates answers using document context, with **citation snippets included**.
+   Gemini generates answers using document context, with **citation snippets included**.
 
 8. **Frontend Display**  
    User sees AI answer **with traceable citations**, improving transparency.
@@ -62,7 +62,7 @@ User uploads a PDF document through the chat interface.
 The system extracts raw text from the PDF, cleans it, and segments it into coherent, meaningful chunks for semantic indexing.
 
 3️⃣ **Embedding Generation**  
-Each chunk is transformed into a dense vector embedding using `text-embedding-ada-002`, capturing its contextual meaning.
+Each chunk is transformed into a dense vector embedding, capturing its contextual meaning.
 
 4️⃣ **Vector Storage**  
 Embeddings are stored in the **Pinecone** vector database, enabling fast and accurate similarity search during queries.
@@ -74,7 +74,7 @@ User enters a natural-language question through the chat interface.
 The system retrieves the most relevant document chunks based on the semantic similarity of the query and compiles them into a context window.
 
 7️⃣ **LLM Response Generation**  
-GPT-4 processes the user query along with the retrieved context to generate a coherent, context-aware, and citation-backed response.
+Gemini processes the user query along with the retrieved context to generate a coherent, context-aware, and citation-backed response.
 
 8️⃣ **Answer Display with Citations**  
 The chatbot displays the response along with **directly linked document snippets**, allowing users to verify and trust the answer.
