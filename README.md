@@ -2,7 +2,7 @@
 The **RAG-BOT** enables users to upload PDF documents and ask questions, receiving intelligent responses based on document content. It uses **Retrieval-Augmented Generation (RAG)** with **LLMs, embeddings, and a vector database** to enable **context-aware and verifiable** Q&A.
 
 ### 🔹 Key Technologies:
-- **LLM & Embeddings**: Gemini APIs  (Gemini 1.5 / Gemini 1.0 models)
+- **LLM & Embeddings**: OpenAI APIs  
 - **Vector Storage**: Pinecone
 - **Backend**: FastAPI (Python)
 - **Frontend**: React
@@ -37,16 +37,16 @@ This chatbot is designed not just for accurate answers, but **trustworthy ones**
    - Cleans and normalizes document data
 
 4. **Embedding Model**  
-   Converts chunks into **vector embeddings** via Gemini and stores them in Pinecone.
+   Converts chunks into **vector embeddings** via FAISS and stores them in Pinecone.
 
 5. **Vector Database (Pinecone)**  
    Enables **semantic search** over embedded chunks for fast, relevant retrieval.
 
 6. **Retrieval + Context Builder**  
-   Matches queries to document vectors, builds **context window** for  Gemini.
+   Matches queries to document vectors, builds **context window**.
 
 7. **LLM Response Generation**  
-   Gemini generates answers using document context, with **citation snippets included**.
+   Open AI API helps in generates answers using document context, with **citation snippets included**.
 
 8. **Frontend Display**  
    User sees AI answer **with traceable citations**, improving transparency.
@@ -74,7 +74,7 @@ User enters a natural-language question through the chat interface.
 The system retrieves the most relevant document chunks based on the semantic similarity of the query and compiles them into a context window.
 
 7️⃣ **LLM Response Generation**  
-Gemini processes the user query along with the retrieved context to generate a coherent, context-aware, and citation-backed response.
+Open AI processes the user query along with the retrieved context to generate a coherent, context-aware, and citation-backed response.
 
 8️⃣ **Answer Display with Citations**  
 The chatbot displays the response along with **directly linked document snippets**, allowing users to verify and trust the answer.
